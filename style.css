@@ -1,23 +1,21 @@
 /*General rules*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     display: flex;
     margin: 0;
 }
 
+p, li, a {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 /*Navbar rules*/
 #navbar {
     background-color: #7579E7;
-    max-width: 240px;
+    border-right: 2px solid #A3D8F4;
+    max-width: 300px;
     height: 100vh;
-    position: fixed;
     margin: 0;
     color: #FFF;
 }
@@ -26,15 +24,32 @@ body {
     color: #FFF;
     display: block;
     padding: 15px;
-    border: 2px solid #FFF;
+    border: 2px solid #A3D8F4;
     text-decoration: none;
     font-family: "IBM Plex Serif", serif;
-    font-size: 14px;
+}
+
+#navbar header {
+    padding: 15px;
 }
 
 header {
     font-family: "IBM Plex Serif", serif;
-    font-size: 20px;
-    padding: 15px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
+/*Main doc rules*/
+#main-doc {
+    flex: 1;
+    background: #FFF;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.main-section {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/*Code rules*/

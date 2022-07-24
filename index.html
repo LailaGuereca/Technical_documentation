@@ -10,7 +10,7 @@
     <!--IBM Plex Serif SemiBold 600-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;600&display=swap" rel="stylesheet">
     <!---->
 </head>
 <body>
@@ -26,27 +26,21 @@
     <main id="main-doc">
         <section class="main-section" id="Introduction"><!--Introduction-->
             <header>Introduction</header>
-            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
-            <br>
-            CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.
-            <br> 
-            From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification.</p>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+            <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.</p>
+            <p>From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification.</p>
         </section>
         <section class="main-section" id="What_is_CSS?"><!--What is CSS?-->
             <header>What is CSS?</header>
-            <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.
-            <br>
-            A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as SVG or XML.
-            <br>
-            Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge , are designed to present documents visually, for example, on a computer screen, projector, or printer.
-            <br>
-            CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation. Have a look at the links in this paragraph for specific examples.</p>
+            <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+            <p>A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as SVG or XML.</p>
+            <p>Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge , are designed to present documents visually, for example, on a computer screen, projector, or printer.</p>
+            <p>CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation. Have a look at the links in this paragraph for specific examples.</p>
         </section>
         <section class="main-section" id="Syntax"><!--Syntax-->
             <header>Syntax</header>
-            <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.
-            <br>
-            For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+            <p>CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.</p>
+            <p>For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
             <pre>
               <code>
                   h1 {
@@ -62,17 +56,14 @@
                 <li>This example contains two declarations, one for <code>color</code> and the other for <code>font-size</code>. Each pair specifies a property of the element(s) we are selecting (<code>&#60h1&#62</code> in this case), then a value that we'd like to give the property.
                 </li>
             </ul>
-            <p>CSS properties have different allowable values, depending on which property is being specified. In our example, we have the color property, which can take various color values. We also have the <code>font-size</code> property. This property can take various size units as a value.
-            <br>
-            A CSS stylesheet will contain many such rules, written one after the other.</p>
+            <p>CSS properties have different allowable values, depending on which property is being specified. In our example, we have the color property, which can take various color values. We also have the <code>font-size</code> property. This property can take various size units as a value.</p>
+            <p>A CSS stylesheet will contain many such rules, written one after the other.</p>
         </section>
         <section class="main-section" id="Adding_CSS_to_our_document"><!--Adding CSS to our document-->
             <header>Adding CSS to our document</header>
-            <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.
-            <br>
-            Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows that this is a CSS file.
-            <br>    
-            To link styles.css to index.html, add the following line somewhere inside the <head> of the HTML document:</p>
+            <p>The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use. There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.</p>
+            <p>Create a file in the same folder as your HTML document and save it as styles.css. The .css extension shows that this is a CSS file.</p>
+            <p>To link styles.css to index.html, add the following line somewhere inside the <head> of the HTML document:</p>
             <code>&#60link rel="stylesheet" href="styles.css"&#62</code>
             <p>This <code>&#60link&#62</code> element tells the browser that we have a stylesheet, using the <code>rel</code> attribute, and the location of that stylesheet as the value of the <code>href</code> attribute. You can test that the CSS works by adding a rule to <code>styles.css</code>. Using your code editor, add the following to your CSS file:</p>
             <pre>
