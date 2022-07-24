@@ -1,0 +1,40 @@
+/*General rules*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+/*Navbar rules*/
+#navbar {
+    background-color: #7579E7;
+    max-width: 240px;
+    height: 100vh;
+    position: fixed;
+    margin: 0;
+    color: #FFF;
+}
+
+#navbar a {
+    color: #FFF;
+    display: block;
+    padding: 15px;
+    border: 2px solid #FFF;
+    text-decoration: none;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+}
+
+header {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 20px;
+    padding: 15px;
+}
+
