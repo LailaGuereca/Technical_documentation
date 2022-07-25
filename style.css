@@ -14,7 +14,7 @@ p, li, a {
 #navbar {
     background-color: #7579E7;
     border-right: 2px solid #A3D8F4;
-    max-width: 300px;
+    min-width: 300px;
     height: 100vh;
     margin: 0;
     color: #FFF;
@@ -41,7 +41,6 @@ header {
 
 /*Main doc rules*/
 #main-doc {
-    flex: 1;
     background: #FFF;
     height: 100vh;
     overflow-y: scroll;
@@ -52,4 +51,50 @@ header {
     line-height: 1.5;
 }
 
+#References a {
+    color: #7579E7;
+}
+
 /*Code rules*/
+pre {
+    background-color: #F6F6F6;
+    border-radius: 2em;
+    padding-top: 14px;
+}
+
+code {
+    background-color: #F6F6F6;
+}
+
+.selector {
+    color: #FF5D6C;
+}
+
+.atribute {
+    color: #3EC70B;
+}
+
+.value {
+    color: #3330E4;
+}
+
+/*Media query*/
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    #navbar {
+        width: 100%;
+        height: 200px;
+        overflow-y: scroll;
+        border-right: none;
+        border-bottom: 2px solid #A3D8F4;
+    }
+
+    #main-doc {
+        width: 100%;
+        height: auto;
+        overflow-y: none;
+    }
+}
